@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>Nesting of table</h1>
+    <table border = 1>
+      <tr>
+        <th>region</th>
+        <th>YTD sales</th>
+      </tr>
+      <tr>
+        <th>West</th>
+        <td>68,000</td>
+      </tr>
+      <tr>
+        <th>Central</th>
+        <td>
+          <!-- this contains nesting of tables-->
+          <table border = 1>
+            <tr>
+              <th>North</th>
+              <td>21,000</td></th>
+            </tr>
+            <tr>
+              <th>South</th>
+              <td>42,000</td>
+            </tr>
+          </table>
+
+        </td>
+        <tr>
+          <th>East</th>
+          <td>72,000</td>
+        </tr>
+
+
+      </tr>
+
+
+
+    </table>
+  </body>
+</html>

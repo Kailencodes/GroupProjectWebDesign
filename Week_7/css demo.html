@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0248)https://alt-5e73d824c25b6.blackboard.com/bbcswebdav/pid-15037765-dt-content-rid-156943503_1/courses/2584.202270/READ_ONLY/content/_15037759_1/relational_selector.html?one_hash=2D8197D99821814D6B24B0534115A910&f_hash=22391763920FD5C2FB39EB8FF272D968 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title> css demo </title>
+		<meta name="author" content="Ronak Sheth">
+		<meta name="description" content="css demo">
+			
+        <style>
+            
+            main li {
+                background-color: rgb(159, 159, 222);
+            }
+            footer li{
+                background-color: red;
+            }
+            main div>h1{
+                background-color: aquamarine;
+            }
+            h2+p{
+                background-color: antiquewhite;
+            }
+            h2~p{
+                background-color: cornflowerblue;
+            }
+            h1,h2{
+                background-color: cornsilk;
+            }
+            p[lang="en-gb"]{
+                font-style: italic;
+                font-weight: bold;
+            }
+            
+           
+        </style>
+        
+    </head>
+    <body>
+        <main>
+           
+            <p>this is p </p>
+            <div>
+                <h1 class="speakers">This Season's Town Hall speakers</h1>
+            </div>
+            <ul class="speakers">
+                <li>January: <a href="https://alt-5e73d824c25b6.blackboard.com/bbcswebdav/pid-15037765-dt-content-rid-156943503_1/courses/2584.202270/READ_ONLY/content/_15037759_1/speakers/brancaccio.html">
+                    David Brancaccio</a></li>
+                <li>February: 
+                    <a href="https://alt-5e73d824c25b6.blackboard.com/bbcswebdav/pid-15037765-dt-content-rid-156943503_1/courses/2584.202270/READ_ONLY/content/_15037759_1/speakers/fitzpatrick.html">
+                    Robert Fitzpatrick</a></li>
+                <li>March: <a href="https://alt-5e73d824c25b6.blackboard.com/bbcswebdav/pid-15037765-dt-content-rid-156943503_1/courses/2584.202270/READ_ONLY/content/_15037759_1/speakers/williams.html">
+                    Juan Williams</a></li>
+            </ul>
+            <h2 id="id1">Post-lecture luncheons</h2>
+             <p>Extend the excitement by going to the luncheon</p>
+            <p lang="en-gb">A limited number of tickets are available.</p>
+            <p lang="en-us"><em>Contact us by phone</em> at (559) 555-
+               1212.</p>
+            <div lang="en-us"> This is div</div>  
+        </main>
+        <footer>
+            <h2> Footer h2</h2>
+            <ul>
+                <li>f1</li>
+                <li>f2</li>
+                <li>f3</li>
+            </ul>
+        </footer>
+    
+</body></html>

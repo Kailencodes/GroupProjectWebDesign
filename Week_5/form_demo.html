@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1> HTML forms </h1>
+    <form name="User_Registartion" action = "abc.html" method ="get"><!-- method can be get or post-->
+      <table>
+        <tr>
+
+      <td><label for = "fn">First Name:</label></td>
+      <td><input type ="text" id ="fn" name = "fname" size ="7" autofocus required ></td>
+     </tr>
+      <tr>
+      <td><label for="ln">Last Name:</label></td>
+      <td> <input type ="text" id ="ln"name = "lname" size = "7" maxlength ="10"></td>
+      </tr>
+      <tr>
+      <td><label for = "pswd"> Password :</label></td>
+      <td><input type="password" id="pswd" name ="pswd" placeholder="Minimum 8 characters" required></td>
+      </tr>
+      <tr>
+      <td><label for ="ac">Area Code:</label></td>
+     <td><input type="text" id ="ac" name="acode" value ="705"></td>
+    </tr>
+    <tr>
+    <td><label for="age">Age:</label></td>
+    <td><input type="number" id="age" name="age" min = "18" max="50" step ="2" size="4"></td>
+    </tr>
+    <td><label for="td">Today's Date:</label></td>
+    <td><input type="text" id ="td" name="tdate" value ="Oct 6 2022" size="6" readonly></td>
+    </tr>
+    <tr>
+      <td><label>Student Type:</label></td>
+      <td>
+        <!-- Radio element so you can only select one option-->
+        <input type="radio" name="stype" value ="PT" id="pt">
+        <label for="pt"> Part-Time </label><br>
+        <input type="radio" name="stype" value ="FT" id="ft">
+        <label for="ft"> Full-Time </label><br>
+        <input type="radio" name="stype" value ="TS" id="ts"> 
+        <label for="ts">Transfered-Student </label><br>
+      </td>
+    </tr>
+    <tr>
+      <td>Hobbies:</td>
+      <td>
+        <fieldset>
+          <!-- puts hobbies in straight line/legend-->
+          <legend>Hobbies</legend>
+        <!-- checkbox so you can select multiples-->
+        <input type = "checkbox" name="shobby1" value =swim> Swimming <br>
+        <input type = "checkbox" name="shobby2" value =read> Reading <br>
+        <input type = "checkbox" name="shobby3" value =write> Writing <br>
+      </fieldset>
+      </td>
+    </tr>
+    <tr>
+      <td>Cities</td>
+      <td>
+        <!-- option group allows for titles of each-->
+        <select name="Cities" size="4" multiple>
+        <optgroup label="Ontario">
+          <option value = "TRNT">Toronto</option>
+          <option value = "OTW">Ottawa</option>
+          <option value = "MS">Mississauga</option>
+        </optgroup>
+        <optgroup label="Alberta">
+          <option value = "CAL">Calgary</option>
+          <option value = "EDMNT">Edmonton</option>
+        </optgroup>
+        <optgroup label="British Columbia">
+          <option value = "VC">Vancouver</option>
+          <option value = "WSTLR">Whistler</option>
+          <option value = "VICT">Victoria</option>
+        </optgroup>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <!-- text area box -->
+      <td>Comments:</td>
+      <td> <textarea name="comments" placeholder ="Please enter your info" cols =100 rows="10">
+      </textarea></td>
+    </tr>
+    <tr>
+      <!-- to do an email-->
+      <td><label for="em">Email:</label></td>
+      <td><input type ="email" id="em" name= "email"></td>
+    </tr>
+    <tr>
+      <!-- to do a url-->
+      <td><label for="url">url:</label></td>
+      <td><input type ="url" id="url" name= "url"></td>
+    </tr>
+    <tr>
+      <!-- choose a file to upload-->
+      <td><label for="uf">Upload a file:</label></td>
+      <td><input type ="file" id="uf" name= "file1"></td>
+    </tr>
+    <tr>
+      <!-- to do an range-->
+      <td><label for="re">Rate your experience</label></td>
+      <td><input type ="range" id="re" name= "rate experience" min="1" max="5"></td>
+    </tr>
+    </table>
+    <table>
+      <tr>
+      <!-- buttons-->
+      <td><input type = "submit" name=" btnSubmit"></td>
+      <td><input type="reset" name ="btnreset" value = "clear"></td>
+      <td><input type="button" name="btnalert" value="Alert"></td>
+      <td><input type="image" src ="images/Bankst Art.jpg" height =50 width =75 border="5"></td>
+      <td><button type="submit">
+        <img src="images/Bankst Art.jpg" height =50 width =70> Add To Cart
+      </button></td>
+    </tr>
+    </table>
+    </form>
+  </body>
+</html>

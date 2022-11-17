@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h3>Order Form</h3>
+    <form name="User_Registartion" action = "abc.html" method ="get">
+    <fieldset>
+      <legend>Member Information</legend>
+      <label for ="em">E-Mail:</label>
+      <input type = "text" id ="em" name = "email">
+      <br>
+      <label for ="fn">First Name:</label>
+      <input type = "text" id ="fn" name = "fname">
+      <br>
+      <label for ="fn">Last Name:</label>
+      <input type = "text" id ="ln" name = "lname">
+    </fieldset>
+    <br><br>
+    <fieldset>
+    <legend>Credit Card Information</legend>
+    Card Type:
+    <select name="Card Type:" size ="1" >
+      <option value = "MST">Mastercard</option>
+      <option value = "VSA">Visa</option>
+      <option value = "AMC">American Express</option>
+    </select>
+    <br>
+    <label for = "cn"> Card Number:</label>
+    <input type="text" id="cn" name ="cnum" placeholder="16 digits">
+    <br>
+    Expiration Date:
+    <select name="Months:" size ="1" >
+      <option value = "Jan">January</option>
+      <option value = "Feb">February</option>
+      <option value = "Mar">March</option>
+      <option value = "Apr">April</option>
+      <option value = "May">May</option>
+      <option value = "Jun">June</option>
+      <option value = "Jul">July</option>
+      <option value = "Aug">August</option>
+      <option value = "Sep">September</option>
+      <option value = "Nov">November</option>
+      <option value = "Dec">December</option>
+      <option value = "Jan">January</option>
+    </select>
+    <select name="Months:" size ="1" >
+      <option value = "19">2019</option>
+      <option value = "20">2020</option>
+      <option value = "21">2021</option>
+      <option value = "22">2022</option>
+    </select>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Submit Your Order</legend>
+    <input type = "submit" name=" btnSubmit">
+    <input type="reset" name ="btnreset" value = "clear">
+  </fieldset>
+  </body>
+</form>
+</html>
